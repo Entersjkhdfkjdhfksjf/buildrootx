@@ -14,5 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install dependencies
+    - name: load config
       run: make warp7_defconfig
+      
+    - name: make
+      run: make 
+      
